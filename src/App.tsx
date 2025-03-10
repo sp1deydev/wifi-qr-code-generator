@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Input, Select, Button, Card, Typography, Space } from "antd";
 import { QRCodeCanvas } from "qrcode.react";
+import './App.css';
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -34,7 +35,7 @@ const App: React.FC = () => {
 
   return (
     <div style={{ minHeight: "100vh", minWidth: "100vw", display: "flex", justifyContent: "center", alignItems: "center", background: "#f0f2f5" }}>
-      <Card style={{ width: 400, textAlign: "center", padding: 20, borderRadius: 10 }}>
+      <Card style={{ textAlign: "center", padding: 20, borderRadius: 10 }} className="wifi-card">
         <Title level={3}>WiFi QR Code Generator</Title>
 
         <Space direction="vertical" style={{ width: "100%" }}>
